@@ -15,7 +15,9 @@ Semantic segmentation of airborne LiDAR point clouds enables a broad range of ur
   <img src="figs/PN++Lora.png" alt="Model teaser" width="100%">
 </p>
 
-### LoRA applied to PointNet++ 
+### LoRA applied to PointNet++:
+>LoRA applied to PointNet++. Orange boxes indicate trainable modules. The input point cloud is represented as \( \mathbf{x} \in \mathbb{R}^{N \times D} \), where \( N \) is the number of input points and \( D \) is the number of input features.  Each layer processes local neighborhoods, where \( N_l \) is the number of sampled points at each level \( l \), \( K \)  the number of neighboring points in the local region and \( D_{\text{in}} \) and \( D_{\text{out}} \) are the input and output feature dimensions, respectively. The output of the network is a per-point semantic prediction \( \mathbf{y} \in \mathbb{R}^{N \times C} \), where \( C \) is the number of semantic classes.
+
 <p align="center">
   <img src="figs/diagramaLora.png" alt="Model teaser" width="50%">
 </p>
