@@ -14,13 +14,20 @@ Semantic segmentation of airborne LiDAR point clouds enables a broad range of ur
 <p align="center">
   <img src="figs/PN++Lora.png" alt="Model teaser" width="100%">
 </p>
+Set Abstraction (SA) layers sample input points, group them, and apply PointNet to obtain high-dimensional representations. Feature Propagation (FP) layers upsample points and propagate features back to the original resolution.
 
 ### LoRA applied to PointNet++
 <p align="center">
   <img src="figs/diagramaLora.png" alt="Model teaser" width="50%">
 </p>
-> Orange boxes indicate trainable modules. The input point cloud is represented as x ∈ ℝ<sup>N×D</sup>, where N is the number of input points and D is the number of input features. Each layer processes local neighborhoods, where N<sub>l</sub> is the number of sampled points at each level l, K is the number of neighboring points in the local region, and D<sub>in</sub> and D<sub>out</sub> are the input and output feature dimensions, respectively. The output of the network is a per‑point semantic prediction y ∈ ℝ<sup>N×C</sup>, where C is the number of semantic classes.
-
+<p align="center">
+  <em>
+    Orange boxes indicate trainable modules.  
+    The input point cloud is represented as x ∈ ℝ<sup>N×D</sup>, where N is the number of input points and D is the number of input features.  
+    Each layer processes local neighborhoods, where N<sub>l</sub> is the number of sampled points at each level l, K is the number of neighboring points in the local region, and D<sub>in</sub> and D<sub>out</sub> are the input and output feature dimensions.  
+    The output of the network is a per-point semantic prediction y ∈ ℝ<sup>N×C</sup>, where C is the number of semantic classes.
+  </em>
+</p>
 
 ## ✨ Key Contributions
 - **LoRA-enabled PointNet++**: Drop‑in adapters on SA/FP layers for efficient fine‑tuning.
