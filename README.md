@@ -16,7 +16,7 @@ Semantic segmentation of airborne LiDAR point clouds enables a broad range of ur
 </p>
 <p align="left">
   <em>
-Set Abstraction (SA) layers sample input points, group them, and apply PointNet to obtain high-dimensional representations. Feature Propagation (FP) layers upsample points and propagate features back to the original resolution.
+PN++ architecture. Set Abstraction (SA) layers sample input points, group them, and apply PointNet to obtain high-dimensional representations. Feature Propagation (FP) layers upsample points and propagate features back to the original resolution.
  </em>
 </p>
 
