@@ -14,13 +14,17 @@ Semantic segmentation of airborne LiDAR point clouds enables a broad range of ur
 <p align="center">
   <img src="figs/PN++Lora.png" alt="Model teaser" width="100%">
 </p>
+<p align="left">
+  <em>
 Set Abstraction (SA) layers sample input points, group them, and apply PointNet to obtain high-dimensional representations. Feature Propagation (FP) layers upsample points and propagate features back to the original resolution.
+ </em>
+</p>
 
 ### LoRA applied to PointNet++
 <p align="center">
   <img src="figs/diagramaLora.png" alt="Model teaser" width="50%">
 </p>
-<p align="center">
+<p align="left">
   <em>
     Orange boxes indicate trainable modules.  
     The input point cloud is represented as x ∈ ℝ<sup>N×D</sup>, where N is the number of input points and D is the number of input features.  
