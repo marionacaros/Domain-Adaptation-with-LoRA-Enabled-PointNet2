@@ -43,6 +43,8 @@ PN++ architecture. Set Abstraction (SA) layers sample input points, group them, 
 
 
 ### TerLiDAR Dataset
+We present TerLiDAR, a fully open and annotated airborne LiDAR dataset that covers 51.4~km\textsuperscript{2} of urban and forested areas along the Ter River in Catalonia, Spain. The data were acquired in July 2021 using an ALS system mounted on a georeferenced aircraft operated by ICGC. The dataset comprises 692 million colorized 3D points, each annotated with one of the semantic classes listed in the paper.
+
 <p align="center">
   <img src="figs/overview.PNG" alt="TerLiDAR coverage area" width="100%">
 </p>
@@ -52,7 +54,24 @@ PN++ architecture. Set Abstraction (SA) layers sample input points, group them, 
   </em>
 </p>
 
-We present TerLiDAR, a fully open and annotated airborne LiDAR dataset that covers 51.4~km\textsuperscript{2} of urban and forested areas along the Ter River in Catalonia, Spain. The data were acquired in July 2021 using an ALS system mounted on a georeferenced aircraft operated by ICGC. The dataset comprises 692 million colorized 3D points, each annotated with one of the semantic classes listed in the paper.
+The classes are described as follows:
+1. **Default** – Points that could not be classified during the classification process.  
+2. **Ground** – Points belonging to the terrain.  
+3. **Low vegetation** – Points corresponding to low vegetation such as shrubs, crops, and the lower parts of trees (0.3 m < height ≤ 2.0 m).  
+4. **Medium vegetation** – Points belonging to medium vegetation, which may include taller shrubs, crops, and parts of tree canopies (2.0 m < height ≤ 3.0 m).  
+5. **High vegetation** – Points corresponding to high vegetation, primarily points within tree canopies (height > 3.0 m).  
+6. **Buildings** – Points generally classified on building rooftops.  
+7. **Low Points** – Points with negative height relative to the ground, usually sensor noise.  
+8. **Ground key points** – Simplified points previously classified as ground (Class 2), used for constructing the Digital Terrain Model.  
+9. **Air points** – Points detected above the terrain, often spurious returns.  
+10. **Other ground points** – Points near the ground, such as those pertaining to grass, that could not be classified as ground.  
+11. **Power lines** – Points representing electric power lines.  
+12. **Transmission tower** – Points on electrical towers.  
+13. **Walls** – Points belonging mostly to building façades.  
+14. **Above buildings** – Points located above buildings, such as chimneys, solar panels, or awnings.  
+15. **Other towers** – Points corresponding to towers not classified as electric towers (e.g., wind turbines, observation towers).  
+16. **Noise** – Points identified as noise produced by the sensor.  
+
 
 <p align="center">
   <img src="figs/RGB.png" alt="TerLiDAR example point clouds" width="100%">
