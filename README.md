@@ -19,9 +19,7 @@ Semantic segmentation of airborne LiDAR point clouds enables a broad range of ur
 <p align="center">
   <img src="figs/diagramaLora.png" alt="Model teaser" width="50%">
 </p>
->Orange boxes indicate trainable modules. The input point cloud is represented as **x ∈ ℝ<sup>N×D</sup>**, where **N** is the number of input points and **D** is the number of input features.  
-Each layer processes local neighborhoods, where **N<sub>l</sub>** is the number of sampled points at each level *l*, **K** is the number of neighboring points in the local region, and **D<sub>in</sub>** and **D<sub>out</sub>** are the input and output feature dimensions, respectively.  
-The output of the network is a per-point semantic prediction **y ∈ ℝ<sup>N×C</sup>**, where **C** is the number of semantic classes.
+> Orange boxes indicate trainable modules. The input point cloud is represented as x ∈ ℝ<sup>N×D</sup>, where N is the number of input points and D is the number of input features. Each layer processes local neighborhoods, where N<sub>l</sub> is the number of sampled points at each level l, K is the number of neighboring points in the local region, and D<sub>in</sub> and D<sub>out</sub> are the input and output feature dimensions, respectively. The output of the network is a per‑point semantic prediction y ∈ ℝ<sup>N×C</sup>, where C is the number of semantic classes.
 
 
 ## ✨ Key Contributions
