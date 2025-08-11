@@ -13,6 +13,10 @@ Semantic segmentation of airborne LiDAR point clouds enables a broad range of ur
 
 <p align="center">
   <img src="figs/PN++Lora.png" alt="Model teaser" width="100%">
+</p>
+
+### LoRA applied to PointNet++ 
+<p align="center">
   <img src="figs/diagramaLora.png" alt="Model teaser" width="50%">
 </p>
 
