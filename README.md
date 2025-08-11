@@ -38,6 +38,8 @@ PN++ architecture. Set Abstraction (SA) layers sample input points, group them, 
 - **Task & domain adaptation**: Evaluation across different airborne LiDAR datasets and in class extension scenarios, demonstrating LoRA's flexibility with minimal parameter overhead.
 - **TerLiDAR dataset**: We release **TerLiDAR**, an open, annotated airborne LiDAR dataset covering 51.4 km² of mixed urban and forested landscapes along the Ter River in Catalonia, Spain.  
 
+> 📄 **Paper link**: Will be released here as soon as the paper is published.
+
 
 ### TerLiDAR Dataset
 <p align="center">
@@ -48,6 +50,8 @@ PN++ architecture. Set Abstraction (SA) layers sample input points, group them, 
     Geographic coverage of the TerLiDAR dataset along the Ter River in Catalonia, Spain.  
   </em>
 </p>
+
+We present TerLiDAR, a fully open and annotated airborne LiDAR dataset that covers 51.4~km\textsuperscript{2} of urban and forested areas along the Ter River in Catalonia, Spain. The data were acquired in July 2021 using an ALS system mounted on a georeferenced aircraft operated by ICGC. The dataset comprises 692 million colorized 3D points, each annotated with one of the semantic classes listed in the paper.
 
 <p align="center">
   <img src="figs/RGB.png" alt="TerLiDAR example point clouds" width="100%">
