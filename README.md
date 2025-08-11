@@ -38,10 +38,36 @@ PN++ architecture. Set Abstraction (SA) layers sample input points, group them, 
 - **Task & domain adaptation**: Experiments on cross‑area ALS data and class extension (e.g., Buildings, Vehicles).
 - **Memory efficiency**: Train only low‑rank adapters while freezing the backbone for faster iteration and lower VRAM usage.
 
+
+## ✨ Key Contributions
+
+- **LoRA-enabled PointNet++**: Integration of Low-Rank Adaptation modules into the PointNet++ architecture to enable parameter-efficient fine-tuning.
+- **Task & domain adaptation**: Evaluation across different airborne LiDAR datasets and in class extension scenarios, demonstrating LoRA's flexibility with minimal parameter overhead.
+- **TerLiDAR dataset**: We release **TerLiDAR**, an open, annotated airborne LiDAR dataset covering 51.4 km² of mixed urban and forested landscapes along the Ter River in Catalonia, Spain.  
+
+<p align="center">
+  <img src="figs/overview.png" alt="TerLiDAR coverage area" width="100%">
+</p>
+<p align="center">
+  <em>
+    Geographic coverage of the TerLiDAR dataset along the Ter River in Catalonia, Spain.  
+  </em>
+</p>
+
+<p align="center">
+  <img src="figs/RGB.png" alt="TerLiDAR example point clouds" width="100%">
+  <img src="figs/classification_legend.png" alt="TerLiDAR example point clouds" width="100%">
+</p>
+<p align="center">
+  <em>
+    Visualization of a LAS tile using RGB values and corresponding semantic classes.
+  </em>
+</p>
+
+
 ## 📦 Environment
 - Python 3.9+
 - PyTorch 1.12+ with CUDA 11.x (recommended)
-- Common libs: numpy, scipy, matplotlib, tqdm, hydra, wandb (optional)
 
 Quick setup:
 ```bash
